@@ -26,7 +26,7 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-      <section>
+      <section data-background="#000000">
         <h2>Während und bevor</h2>
         <p>
 
@@ -50,7 +50,7 @@
         </p>
       </section>
 
-      <section>
+      <section data-background="#000000">
         <h2>Während</h2>
         <p>
           Spójnik <span style="font-style: italic; font-weight: bold;" class="fragment highlight-red">während</span>
@@ -64,8 +64,8 @@
       </section>
 
       <!-- Example of nested vertical slides -->
-      <section>
-        <section>
+      <section data-background="#000000">
+        <section data-background="#000000">
           <h2>Przykładowe Zdania</h2>
           <ul>
             <li>
@@ -74,7 +74,7 @@
                 <span class="fragment highlight-blue">die Hausdienerin</span> das Wasser für Nudeln
                 <span class="fragment highlight-red">kocht auf</span>,
                 <span class="fragment highlight-green">bete</span>
-                ich in meinem Zimmer.</p>
+                <span class="fragment highlight-blue">ich</span> in meinem Zimmer.</p>
             </li>
             <li>
               <p>
@@ -82,12 +82,12 @@
                 <span class="fragment highlight-blue">Herr Müller</span>
                 nach der Arbeit <span class="fragment highlight-red">schlief</span>,
                 <span class="fragment highlight-green">spülte</span>
-                seine Frau das Geschirr.
+                <span class="fragment highlight-blue">seine Frau</span> das Geschirr.
               </p>
             </li>
             <li>
               <p>
-                Ich <span class="fragment highlight-green">gehe</span>
+                <span class="fragment highlight-blue">Ich</span> <span class="fragment highlight-green">gehe</span>
                 Gassi mit euren Hund,
                 <span style="font-weight: bold">während</span>
                   <span class="fragment highlight-blue">meine Schwester</span> in die Sekteversammlung
@@ -115,31 +115,34 @@
       </section>
 
       <section data-background="#dddddd">
-        <section>
+        <section data-background="#dddddd">
           <h2>Przykładowe zdania</h2>
           <ul>
             <li>
               <p><span style="font-weight: bold">Bevor</span>
                 <span class="fragment highlight-blue">du</span>
                 die Hausaufgabe <span class="fragment highlight-red">machst</span>,
-                <span class="fragment highlight-green">musst</span> du deine Eltern helfen.</p>
+                <span class="fragment highlight-green">musst</span> <span class="fragment highlight-blue">du</span> deine Eltern helfen.</p>
             </li>
             <li>
               <p>
-                Ich habe <span class="fragment highlight-green">gefrühstückt</span>, <span style="font-weight: bold">bevor</span>
+                <span class="fragment highlight-blue">Ich</span> <span class="fragment highlight-green">habe</span> gefrühstückt, <span style="font-weight: bold">bevor</span>
                 <span class="fragment highlight-blue">ich</span>
                 nach Deutschland gefahren <span class="fragment highlight-red">bin</span>.
             </li>
             <li>
               <p>
-                <span style="font-weight: bold">Bevor</span> ich spazieren gegangen
+                <span style="font-weight: bold">Bevor</span> <span class="fragment highlight-blue">ich</span> spazieren gegangen
                 <span class="fragment highlight-green">bin</span>,
                 <span class="fragment highlight-red">badete</span>
                 <span class="fragment highlight-blue">ich</span> mich.
               </p>
             </li>
             <li>
-              <p>Ich habe mich <span class="fragment highlight-green">gebadet,</span> <span style="font-weight: bold">bevor </span><span class="fragment highlight-blue">ich</span>
+              <p><span class="fragment highlight-blue">Ich</span>
+                habe mich <span class="fragment highlight-green">gebadet,</span>
+                <span style="font-weight: bold">bevor </span>
+                <span class="fragment highlight-blue">ich</span>
               spazieren gegangen <span class="fragment highlight-red">bin</span>.</p>
             </li>
           </ul>
@@ -238,6 +241,8 @@
       // Learn about plugins: https://revealjs.com/plugins/
       plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
     });
+
+    Reveal.configure({ pdfSeparateFragments: false });
 
   </script>
 
